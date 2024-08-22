@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Ankita!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: url('https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fce8d5;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        .card {
+            padding: 20px;
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            color: #ff6f61;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .cake-img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #555;
+            font-size: 14px;
+            line-height: 1.5;
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: #ff6f61;
+            color: #fff;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background-color: #e65c54;
+            transform: scale(1.05);
+        }
+
+        #message {
+            margin-top: 20px;
+            text-align: left;
+            color: #333;
+            border-top: 1px solid #ff6f61;
+            padding-top: 20px;
+            display: none;
+            animation: fadeIn 1s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Happy Birthday, Ankita!</h1>
+            <img src="https://namebirthdaycakes.net/generated/Generated-Cover-06.21.24-1718966559653.jpg" alt="Birthday Cake" class="cake-img">
+            <p>Today is a special day, and I want you to know how much you mean to me.</p>
+            <button id="revealButton">Here are some words of my heart</button>
+            <div id="message">
+                <p>Dear Ankita,</p>
+                <p>You were always a special person holding a special place in my heart. I had never invested such interest and time in anyone but you were different however I tried to move on but I am getting into you. I don't know whether you like me or not, either. I am not even sure that I am perfect.</p>
+                <p>Even though I am in a different field now, I still can't hold it, so for the last time I want to let you know that ✨️I LOVE YOU✨️</p>
+                <p>I still like you the same. I don't think my feelings for you would ever change. You will get to know who I am once we meet ✨️</p>
+                <p>With love, HydraKind987</p>
+            </div>
+        </div>
+    </div>
+    <audio id="birthdaySong" src="https://s3-us-west-2.amazonaws.com/1hbcf/Ankita.mp3" loop></audio>
+    <script>
+        var audio = document.getElementById('birthdaySong');
+
+        // Autoplay audio on load
+        audio.play();
+
+        // Add event listener to reveal message button
+        document.getElementById('revealButton').addEventListener('click', function() {
+            var messageDiv = document.getElementById('message');
+            if (messageDiv.style.display === "none" || messageDiv.style.display === "") {
+                messageDiv.style.display = "block";
+            } else {
+                messageDiv.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
+
